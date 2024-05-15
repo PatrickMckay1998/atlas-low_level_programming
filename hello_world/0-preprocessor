@@ -1,11 +1,2 @@
-#include <stdio.h>
-
-int main(void)(
-{ 
-int CFILE=*.c;
-	{	
-		cpp CFILE > c;
-return(0)
-	}
-}
-)
+#!/bin/bash
+cpp $CFILE > c
