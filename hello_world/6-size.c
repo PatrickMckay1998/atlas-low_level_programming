@@ -8,10 +8,10 @@ int main(void)
 	long long longlongType;
 	float floatType;
 
-printf("Size of a char is:", sizeof(charType));
-printf("Size of an int is:", sizeof(integerType));
-printf("Size of a long int is:", sizeof(longType));
-printf("Size of a long long int is:", sizeof(longlongType));
-printf("Size of a float is:", sizeof(floatType));
+printf("Size of a char is: %zu\n", sizeof(charType));
+printf("\nSize of an int is: %zu\n", sizeof(integerType));
+printf("\nSize of a long int is: %zu\n", sizeof(longType));
+printf("\nSize of a long long int is: %zu\n", sizeof(longlongType));
+printf("\nSize of a float is: %zu\n", sizeof(floatType));
 return(0);
 }
