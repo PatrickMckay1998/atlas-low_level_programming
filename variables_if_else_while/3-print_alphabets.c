@@ -6,6 +6,7 @@ int main(void) {
 for(al = 'a' ; al <= 'z' ; al++) 
 	{
 	putchar(al);		
+	}
 	{
 			for(AL = 'A' ; AL <= 'Z' ; AL++) 
 			{
@@ -15,4 +16,3 @@ for(al = 'a' ; al <= 'z' ; al++)
 	putchar('\n');
 	return(0);
 	}
-}
