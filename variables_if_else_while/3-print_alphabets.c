@@ -3,10 +3,16 @@
 int main(void) {
 	char al;
 	char AL; 
-for((al = 'a' ; al <= 'z' ; al++)(AL = 'A' ; AL <= 'Z' ; AL++)) {
+for(al = 'a' ; al <= 'z' ; al++) 
+	{
 	putchar(al);		
-	putchar(AL); 
+	{
+			for(AL = 'A' ; AL <= 'Z' ; AL++) 
+			{
+				putchar(AL);
+			}
 	}
-	putchar("\n");
+	putchar('\n');
 	return(0);
+	}
 }
