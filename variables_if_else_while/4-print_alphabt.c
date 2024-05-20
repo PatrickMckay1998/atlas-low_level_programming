@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int mani(void) {
+int main(void) {
 	char al;
 	for(al = 'a' ; al <= 'z' ; al++) {
 	if(al == 'q' || al == 'e') {
