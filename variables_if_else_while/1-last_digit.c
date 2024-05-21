@@ -14,7 +14,7 @@ int main(void)
 		int ld = n % 10;
 		if (n < 6 && n != 0)
 		{
-			printf("Last digit of %d is %d and is less than 6 but not zero\n", n, ld);
+			printf("Last digit of %d is %d and is less than 6 but not 0\n", n, ld);
 		}
 		if (n > 5) 
 		{
@@ -22,7 +22,7 @@ int main(void)
 		}
 		if (n == 0)
 		{
-			printf("Last digit of %d is %d and is zero\n", n, ld);
+			printf("Last digit of %d is %d and is 0\n", n, ld);
 		}
 	}
 	return (0);
