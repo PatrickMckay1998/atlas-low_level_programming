@@ -1,11 +1,4 @@
-#include <main.h>
-#include <stdio.h>
-
-
-
-int main(void) 
-{
-	printf("_putchar");
-	return (0);
-}
-
+#ifndef main_h
+#define main_h
+int _putchar(char c);
+void print_alphabet(void);
