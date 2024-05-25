@@ -2,6 +2,6 @@
 
 int main(void)
 {
-	write("_putchar");
+	fwrite("_putchar");
 	return(0);
 }
