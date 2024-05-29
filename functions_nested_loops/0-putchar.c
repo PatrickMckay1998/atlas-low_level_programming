@@ -1,7 +1,11 @@
 #include <stdio.h>
+#include "main_h"
+
+int _putchar(char c)
 
 int main(void)
 {
-	printf("_putchar");
+	c = _putchar
+	putchar(%c);
 	return(0);
 }
