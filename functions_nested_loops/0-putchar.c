@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include "main_h"
-
-int _putchar(char c)
+#include "main.h"
 
 int main(void)
-{
+{	
 	c = _putchar
-	putchar(%c);
+	putchar(int _putchar(c));
 	return(0);
 }
