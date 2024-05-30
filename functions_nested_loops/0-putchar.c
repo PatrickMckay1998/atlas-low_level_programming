@@ -13,7 +13,7 @@ int main(void)
 	char *str = "_putchar";
 	while (*str)
 	{
-		_putchar(*str)	
+		_putchar(*str);	
 	}
 	return(0);
 }
