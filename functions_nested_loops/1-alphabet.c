@@ -1,4 +1,3 @@
-#include "stdio.h"
 #include "main.h"
 
 /**
@@ -8,13 +7,14 @@
  *
  * 
  */
+int _putchar(char c);
 
 int main(void)
 {
-	char al;
-	for(al = 'a' ; al <= 'z'; al++) 
+	char c;
+	for(c = 'a' ; c <= 'z'; c++) 
 	{
-	_putchar(al);
+	_putchar('c');
 	}
 	_putchar('\n');
 }
