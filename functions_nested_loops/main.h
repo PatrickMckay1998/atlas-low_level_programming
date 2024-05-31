@@ -2,6 +2,6 @@
 #define main_h
 
 int _putchar(char c);
-void print_aplhabet(void);
+void print_aplphabet(void);
 
 #endif
