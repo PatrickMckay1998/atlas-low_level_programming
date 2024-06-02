@@ -8,8 +8,7 @@
 
 int main(void)
 {	
-	int c;
-	if(_islower(c) != 0)
+	if('c' >= 'a' && 'c' <= 'z')
 	{
 		_putchar(1);
 	}	
