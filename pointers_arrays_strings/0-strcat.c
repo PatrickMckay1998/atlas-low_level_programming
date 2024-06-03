@@ -11,6 +11,5 @@ char *_strcat(char *dest, char *src)
         	*dest++ = *src++;
     	}
     *dest = '\0';
-    _putchar('\n');
-    return(0);
+    return('null');
 }
