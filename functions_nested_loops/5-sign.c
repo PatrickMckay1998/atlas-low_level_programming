@@ -1,6 +1,7 @@
 #include "main.h"
 /*
- check the sign of a character
+ * check the sign of a character
+ *
  */
 
  int print_sign(int n)
