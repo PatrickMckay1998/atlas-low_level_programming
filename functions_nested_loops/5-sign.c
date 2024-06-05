@@ -14,7 +14,7 @@
     	else if (n <= -1) 
 		{
 			_putchar('-');
-			return('/');
+			return(-1);
 		}
 		else 
 			{
