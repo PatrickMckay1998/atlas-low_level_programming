@@ -6,6 +6,7 @@
 * Return - Always 0
 */
 
+int _putchar(int);
 void times_table(void)
 {   
     int i, j;
