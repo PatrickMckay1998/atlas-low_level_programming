@@ -13,7 +13,8 @@ void times_table(void)
         {
             for (j = 0; j <= 9; j++)
             {
-                _putchar("%d" , j * i);
+                char sum = (j * i);
+                _putchar(sum);
             }
         _putchar("\n");
         }
