@@ -16,6 +16,6 @@ void times_table(void)
                 char sum = (j * i);
                 _putchar(sum);
             }
-        _putchar("\n");
+        _putchar('\n');
         }
 }
