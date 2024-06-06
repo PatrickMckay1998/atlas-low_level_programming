@@ -7,9 +7,9 @@
 *
 */
 
-int add(int, int)
+int add(int mia, int pat)
 {
-    int mia, pat, result;
+    int result;
     reslut = mia + pat;
     return(result);
 }
