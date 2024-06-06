@@ -1,8 +1,7 @@
 #include "main.h"
 
-int _abs(int)
+int _abs(int number)
 {
-    int number;
     if(number >= 0)
     {
         return(number);
