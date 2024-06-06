@@ -18,7 +18,7 @@ void times_table(void)
                 {
                     _putchar(',');
                     _putchar(' ');
-                    if (mia < 10)
+                    if (mia <= 10)
                     _putchar(' ');
                 }
                 if (mia > 10)
