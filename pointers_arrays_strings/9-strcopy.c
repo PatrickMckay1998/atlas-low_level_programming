@@ -10,7 +10,7 @@ char *_strcpy(char *dest, char *src)
         dest++;
         src++;
     }
-    *dest = '\0';  // Add the terminating null byte
+    *dest = '\0';
 
     return orig_dest;
 }
