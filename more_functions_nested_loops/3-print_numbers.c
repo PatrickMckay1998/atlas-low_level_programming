@@ -2,10 +2,10 @@
 
 void print_numbers(void)
 {
-    char *nico;
-    for (nico =0; nico <= 9; nico++)
+    char n;
+    for (n =0; n <= 9; n++)
     {
-        _putchar('nico');
+        _putchar(n);
     }
     _putchar('\n');
 }
