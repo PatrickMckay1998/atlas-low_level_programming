@@ -2,6 +2,10 @@
 
 void _puts(char *str)
 {
-    _puts(char *str);
-    return (0);
+    while (*str != '\0')
+    {
+        _putchar(*str);
+        str++;
+    }
+    _putchar('\n');
 }
