@@ -2,7 +2,7 @@
 
 int _isupper(int c)
 {
-    if (c = 'A')
+    if (int c = 'A')
     {
         return(1);
     }
