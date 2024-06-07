@@ -7,8 +7,10 @@ void more_numbers(void)
     {
         for (p = '0'; p <= '14'; p++)
         {
-            _putchar(p);
+            if (p >= 10)
+            _putchar( '0' = p / 10);
+            _putchar ('0' + p % 10);
         }
-    }
     _putchar('\n');
+    }
 }
