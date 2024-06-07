@@ -2,5 +2,6 @@
 
 void _puts(char *str)
 {
-    _putchar(*str);
+    _puts(*str);
+    return (0);
 }
