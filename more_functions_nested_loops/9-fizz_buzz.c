@@ -2,30 +2,32 @@
 
 int main(void)
 {
-    int m;
-    for(m = 1; m <= 100; m++)
+    for (int i = 1; i <= 100; i++)
     {
-        if (m / 3)
-        {
-            printf("Fizz");
-            printf(" ");
-        }
-        if (m / 5)
-        {
-            printf("Buzz");
-            printf(" ");
-        }
-        if (m / 3 && m / 5)
+        if (i % 3 == 0 && i % 5 == 0)
         {
             printf("FizzBuzz");
-            printf(" ");
         }
-        else 
+        else if (i % 3 == 0)
         {
-            printf("%d", m);
+            printf("Fizz");
+        }
+        else if (i % 5 == 0)
+        {
+            printf("Buzz");
+        }
+        else
+        {
+            printf("%d", i);
+        }
+
+        if (i != 100)
+        {
             printf(" ");
         }
     }
+    printf("\n");
+
     return (0);
 }
 
