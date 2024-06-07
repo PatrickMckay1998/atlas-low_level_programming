@@ -6,9 +6,11 @@ void print_square(int size)
     if (size <= 0)
     {
         _putchar('\n');
+        return;
     }
     for (m = 0; m < size; m++)
     {
         _putchar('#');
     }
+    _putchar('\n');
 }
