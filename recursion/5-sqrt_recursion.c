@@ -10,7 +10,7 @@ int _sqrt_helper(int n, int i)
 
 int _sqrt_recursion(int n)
 {
-    if (n < 0)  // Natural square root does not exist for negative numbers
+    if (n < 0)
         return -1;
-    return _sqrt_helper(n, 0);  // Start the helper function with 0 as the initial divisor
+    return _sqrt_helper(n, 0);
 }
