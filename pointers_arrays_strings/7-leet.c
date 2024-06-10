@@ -6,27 +6,28 @@ char *leet(char *m)
     {
         if (m == 'a' || m == 'A')
         {
-            m = 4;
+            m = '4';
+            m++;
         }
         else if (m == 'e' || m == 'E')
         {
-            m = 3;
+            m = '3';
+            m++;
         }
-        else if (m == 'o' || m = 'O')
+        else if (m == 'o' || m == 'O')
         {
-            m = 0;
+            m = '0';
+            m++;
         }
         else if (m == 't' || m == 'T')
         {
-            m = 7;
+            m = '7';
         }
         else if (m == 'l' || m == 'L')
         {
-            m = 1;
+            m = '1';
+            m++;
         }
-        else 
-        return(m);
-        m++;
-        
+        return (m);
     }
 }
