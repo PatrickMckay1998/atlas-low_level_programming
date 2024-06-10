@@ -14,7 +14,7 @@ char *cap_string(char *str)
             *ptr -= 32;
             capnxt = 0;
         }   
-        else if (separators != NULL && *ptr != NULL)
+        else if (separators != '\0' && *ptr != '\0')
         {
             capnxt = 1;
         }
