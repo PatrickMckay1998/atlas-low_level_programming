@@ -2,9 +2,9 @@
 
 char *leet(char *nico)
 {
-    char *ptr = nico
-    char brax[10] = "aAeEoOtTlL"
-    char tiny[10] = "4433007711"
+    char *ptr = nico;
+    char brax[10] = "aAeEoOtTlL";
+    char tiny[10] = "4433007711";
     int m;
     while (*ptr != '\0')
     {
