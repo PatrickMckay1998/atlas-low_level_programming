@@ -3,8 +3,8 @@
 char *cap_string(char *str)
 {
 
-    char *separators = " \t\n,;.!?\"(){}"
-    char *ptr = str
+    char *separators = " \t\n,;.!?\"(){}";
+    char *ptr = str;
     int capnxt = 1;
 
     while (*ptr != '\0')
