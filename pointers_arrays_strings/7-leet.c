@@ -1,33 +1,22 @@
 #include "main.h"
 
-char *leet(char *m)
+char *leet(char *nico)
 {
-    while (*m != '\0')
+    char *ptr = nico
+    char brax[10] = "aAeEoOtTlL"
+    char tiny[10] = "4433007711"
+    int m;
+    while (*ptr != '\0')
     {
-        if (m == 'a' || m == 'A')
+        for (m = 0, m <= 10; m++)
         {
-            m = '4';
-            m++;
+            if (*ptr == brax[m])
+            {
+                *ptr = tiny[m];
+                break;
+            }
         }
-        else if (m == 'e' || m == 'E')
-        {
-            m = '3';
-            m++;
-        }
-        else if (m == 'o' || m == 'O')
-        {
-            m = '0';
-            m++;
-        }
-        else if (m == 't' || m == 'T')
-        {
-            m = '7';
-        }
-        else if (m == 'l' || m == 'L')
-        {
-            m = '1';
-            m++;
-        }
-        return (m);
+        ptr++;
     }
+    return nico;
 }
