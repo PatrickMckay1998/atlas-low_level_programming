@@ -5,6 +5,7 @@ char *string_toupper(char *m)
 	while (*m != '\0')
 	{
 		m[i] = m[i] + 32;
+		m++;
 		i++;
 	}
 	return(m);
