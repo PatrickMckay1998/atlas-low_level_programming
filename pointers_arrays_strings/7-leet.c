@@ -8,7 +8,7 @@ char *leet(char *nico)
     int m;
     while (*ptr != '\0')
     {
-        for (m = 0, m <= 10; m++)
+        for (m = 0; m <= 10; m++)
         {
             if (*ptr == brax[m])
             {
