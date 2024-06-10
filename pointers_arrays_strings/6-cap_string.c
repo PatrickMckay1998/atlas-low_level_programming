@@ -3,7 +3,7 @@
 char *cap_string(char *str)
 {
 
-    char *separators = " \t\n,;.!?\"(){}";
+    char sep[] = { ' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\0' };
     char *ptr = str;
     int capnxt = 1;
 
@@ -13,14 +13,27 @@ char *cap_string(char *str)
         {
             *ptr -= 32;
             capnxt = 0;
-        }   
-        else if (*separators != '\0' && *ptr != '\0')
-        {
-            capnxt = 1;
         }
         else 
         {
-            capnxt = 0;
+            int is_sep = 0;
+            int i;
+            for (i = 0; sep[i] != '\0'; i++)
+            {
+                if (*ptr == sep[i])
+                {
+                    is_sep = 1;
+                    break;
+                }
+            }
+            if (is_sep)
+            {
+                capnxt =1;
+            }
+            else
+            {
+                capnxt = 0;
+            }
         }
         ptr++;
     }
