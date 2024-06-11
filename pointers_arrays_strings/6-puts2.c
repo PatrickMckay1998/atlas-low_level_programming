@@ -5,7 +5,7 @@
  * starting with the first character
  * @str: The string to be processed
  *
- * Description: This function takes a string and prints every other character 
+ * Description: This function takes a string and prints every other character
  * starting with the first character, followed by a new line.
  *
  * Return: void
