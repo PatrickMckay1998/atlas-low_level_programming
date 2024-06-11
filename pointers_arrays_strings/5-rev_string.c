@@ -2,7 +2,7 @@
 
 /*
 * rev_string - reverses a string by replacing the beginning with the end
-*
+* @s: the string to be reversed
 * @length: length of the string
 * @i: is the counter
 * @temp: becomes the placeholder for the end of the string to the beginning
