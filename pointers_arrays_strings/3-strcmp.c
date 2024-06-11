@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
-* _strcmp - compares two strings by iterating through the strings 
+* _strcmp - compares two strings by iterating through the strings
 *           and comparing characters
 * @i: this is what checks every character to see if they are the same
 */
