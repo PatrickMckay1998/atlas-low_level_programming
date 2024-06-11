@@ -20,12 +20,12 @@ while (*dest_end != '\0')
 }
 while (i < n && src[i] != '\0')
 {
-    *dest_end = src[i];
-    dest_end++;
-    i++;
+*dest_end = src[i];
+dest_end++;
+i++;
 }
 
-    *dest_end = '\0';
+*dest_end = '\0';
 
-    return (dest);
+return (dest);
 }
