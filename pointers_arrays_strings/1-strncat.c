@@ -18,6 +18,7 @@ while (*dest_end != '\0')
 {
 dest_end++;
 }
+
 while (i < n && src[i] != '\0')
 {
 *dest_end = src[i];
