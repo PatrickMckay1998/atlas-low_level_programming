@@ -16,7 +16,7 @@ int i = 0;
 
 while (*dest_end != '\0')
 {
-    dest_end++;
+dest_end++;
 }
 while (i < n && src[i] != '\0')
 {
