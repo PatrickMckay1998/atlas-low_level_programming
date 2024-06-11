@@ -23,7 +23,7 @@ length++;
 for (i = 0; i < length / 2; i++)
 {
 temp = s[i];
-s[i] = s[length -1 -i];
-s[length -1 -i] = temp;
+s[i] = s[length - 1 - i];
+s[length - 1 - i] = temp;
 }
 }
