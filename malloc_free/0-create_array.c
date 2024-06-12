@@ -19,7 +19,6 @@ char *create_array(unsigned int size, char c)
     for (i = 0; i < size; i ++)
     {
         str_array[i] = c;
-        free(str_array);
     }
     return (str_array);
 }
