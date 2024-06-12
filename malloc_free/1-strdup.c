@@ -3,7 +3,7 @@
 
 char *_strdup(char *str)
 {
-    str_two[] = malloc(sizeof(/*OG str?*/) * 4)
+    char str_two[] = malloc(sizeof(/*OG str?*/) * 4)
     int i = 0;
     
     if (str = NULL)
@@ -16,5 +16,4 @@ char *_strdup(char *str)
         I is going up but where is the counter going*/
         return (str_two[i]);
     }
-
 }
