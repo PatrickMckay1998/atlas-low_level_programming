@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {   
     int i = 0;
     char *str_array = NULL;
