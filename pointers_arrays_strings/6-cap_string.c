@@ -26,7 +26,7 @@ if (capnxt && *ptr >= 'a' && *ptr <= 'z')
 *ptr -= 32;
 capnxt = 0;
 }
-else 
+else
 {
 int is_sep = 0;
 int i;
@@ -40,7 +40,7 @@ break;
 }
 if (is_sep)
 {
- capnxt =1;
+capnxt = 1;
 }
 else
 {
