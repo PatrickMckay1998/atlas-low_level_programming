@@ -34,5 +34,5 @@ break;
 }
 ptr++;
 }
-return nico;
+return (nico);
 }
