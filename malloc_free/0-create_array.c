@@ -4,7 +4,7 @@
 
 char *create_array(unsigned int size, char c)
 {   
-    int i = 0;
+    unsigned int i = 0;
     char *str_array = NULL;
     str_array = malloc(sizeof(char) * size + 1);
 
@@ -21,5 +21,5 @@ char *create_array(unsigned int size, char c)
         str_array[i] = c;
         free(str_array);
     }
-    return (str_array)
+    return (str_array);
 }
