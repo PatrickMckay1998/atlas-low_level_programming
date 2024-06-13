@@ -5,6 +5,7 @@ char *_strdup(char *str)
 {
     char *dup;
     unsigned int length;
+    dup = malloc(sizeof(str) + 1);
     
     if (str == NULL)
     {
@@ -12,7 +13,6 @@ char *_strdup(char *str)
     }
     
     length = 0; 
-    dup = malloc(sizeof(str));
     
     while(str[length])
     {
