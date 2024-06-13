@@ -8,6 +8,10 @@ char *str_concat(char *s1, char *s2)
     - */
     char *end_of_line;
     unsigned int i;
-    
-     if ()
+
+     if (s1 == NULL || s2 == NULL)
+     {
+        return (NULL);
+     }
+     
 }
