@@ -4,7 +4,6 @@
 char *_strdup(char *str)
 {
     char *dup;
-    unsigned int i;
     unsigned int length;
     
     if (str == NULL)
