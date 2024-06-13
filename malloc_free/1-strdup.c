@@ -3,17 +3,32 @@
 
 char *_strdup(char *str)
 {
-    char str_two[] = malloc(sizeof(str) * 4)
-    int i = 0;
+    char *dup;
+    unsigned int i;
+    unsigned int length;
     
     if (str = NULL)
     {
         return (NULL);
     }
     
-    for(i = 0, i < str; i++)
-    { /* Here is where the counter goes up
-        I is going up but where is the counter going*/
-        return (*str_two[i]);
+    length = 0; 
+    
+    while(str[length])
+    {
+        length++;
     }
+
+    dup = malloc(sizeof(char) * (length + 1));
+
+    if (dup == '\0')
+    {
+        return (NULL);
+    }
+
+    for(i = 0; i <= length; i++)
+    { 
+        dup[i] = str[i];
+    }
+    return (dup);
 }
