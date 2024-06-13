@@ -17,17 +17,8 @@ char *_strdup(char *str)
     
     while(str[length])
     {
+    dup[length] = str[length]
     length++;
-
-    if (dup == NULL)
-    {
-        return (NULL);
-    }
-
-    for(i = 0; i <= length; i++)
-    { 
-        dup[i] = str[i];
-    }
     }
     return (dup);
 }
