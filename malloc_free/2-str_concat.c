@@ -18,12 +18,12 @@ char *str_concat(char *s1, char *s2)
 
     dest_end = malloc(sizeof(s1) && (s2));
     i = 0;
-    while (dest_end != '\0')
+    while (dest_end != NULL)
     {
         dest_end++;
     }
 
-    while (s2 != '\0') /* this loop copies each character from string 2
+    while (s2 != NULL) /* this loop copies each character from string 2
         to the position pointed ot by the dest end. After each copy, both dest end and string 2
         are incremented to point to the next character in their respective strings*/
     {
@@ -32,6 +32,6 @@ char *str_concat(char *s1, char *s2)
         s2++;
     }
     
-    dest_end = '\0'; /* Add a null byte to the end*/
+    dest_end = NULL; /* Add a null byte to the end*/
     return (s1);
 }
