@@ -11,14 +11,14 @@ char *str_concat(char *s1, char *s2)
     char new_str;
     char *dest_end = s1;
     int i;
-     if (s1 == NULL || s2 == NULL) /* Return NULL if either string is NULL*/
+     if (s1 == NULL || s2 == NULL)
     {
         return (NULL);
     }
 
     dest_end = malloc(sizeof(s1) && (s2));
     i = 0;
-    while (dest_end != '\0') /* loops through dest end until '\0' and creates ptr to end of dest end*/
+    while (dest_end != '\0')
     {
         dest_end++;
     }
