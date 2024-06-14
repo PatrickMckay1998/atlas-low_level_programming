@@ -8,7 +8,7 @@ char *str_concat(char *s1, char *s2)
     - */
 
     char new_str;
-    char dest_end = s1;
+    char *dest_end = *s1;
     int i;
      if (s1 == NULL || s2 == NULL) /* Return NULL if either string is NULL*/
     {
