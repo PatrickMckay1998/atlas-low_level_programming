@@ -8,9 +8,8 @@ char *str_concat(char *s1, char *s2)
     - we know we are going to be using a for loop and a while loop
     - */
 
-    char new_str;
     char *dest_end = s1;
-    int i;
+    
      if (s1 == NULL || s2 == NULL)
     {
         return (NULL);
