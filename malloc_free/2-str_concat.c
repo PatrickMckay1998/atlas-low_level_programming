@@ -9,14 +9,14 @@ char *str_concat(char *s1, char *s2)
     - */
 
     char *dest_end = s1;
-    
+
      if (s1 == NULL || s2 == NULL)
     {
         return (NULL);
     }
 
     dest_end = malloc(sizeof(s1) && (s2));
-    i = 0;
+
     while (dest_end != NULL)
     {
         dest_end++;
