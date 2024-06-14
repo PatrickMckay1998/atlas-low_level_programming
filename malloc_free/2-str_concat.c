@@ -8,29 +8,29 @@ char *str_concat(char *s1, char *s2)
     - we know we are going to be using a for loop and a while loop
     - */
 
-    char *dest_end = s1;
+    int length, j;
 
      if (s1 == NULL || s2 == NULL)
     {
         return (NULL);
     }
 
-    dest_end = malloc(sizeof(s1) && (s2));
+    s1 = malloc(sizeof(s1) + sizeof(s2));
+    
+    length = 0;
 
-    while (dest_end != NULL)
+    while (s1[length] != '\0')
     {
-        dest_end++;
+        length++;
     }
 
-    while (s2 != NULL) /* this loop copies each character from string 2
-        to the position pointed ot by the dest end. After each copy, both dest end and string 2
+    for (j = 0; s2[j] != '\0'; j++, length++) /* this loop copies each character from string 2
+        to the position pointed to by the dest end. After each copy, both dest end and string 2
         are incremented to point to the next character in their respective strings*/
     {
-        dest_end = s2; 
-        dest_end++;
-        s2++;
+        s1[length] = s2[j];
     }
     
-    dest_end = NULL; /* Add a null byte to the end*/
+    s1[length] = '\0'; /* Add a null byte to the end */
     return (s1);
 }
