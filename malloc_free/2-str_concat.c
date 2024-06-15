@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
         return (NULL);
     }
 
-    char dest = result; /* Setting the dest ptr to equal the result ptr*/
+    char *dest = result; /* Setting the dest ptr to equal the result ptr*/
     
     while (*s1 != '\0') /* Copies s1 to dest ptr */
     {
