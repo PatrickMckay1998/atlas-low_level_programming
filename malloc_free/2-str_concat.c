@@ -3,34 +3,35 @@
 
 char *str_concat(char *s1, char *s2)
 {
-    /* concatenate two strings
-    - we know we have two strings
-    - we know we are going to be using a for loop and a while loop
-    - */
+    while (s1[len1] != '\0')
+    {
+        len1++;
+    }
 
-    int length, j;
+    while (s2[len2] != '\0')
+    {
+        len2++;
+    }
 
-     if (s1 == NULL || s2 == NULL)
+    char *new_str = (char *)malloc(len1 + len2 +1);
+
+    if (new_str == NULL)
     {
         return (NULL);
     }
 
-    s1 = malloc(sizeof(s1) + sizeof(s2));
+    char *dest = *result;
     
-    length = 0;
-
-    while (s1[length] != '\0')
+    while (*s1 != '\0')
     {
-        length++;
+        *dest++ = *s1++;
     }
 
-    for (j = 0; s2[j] != '\0'; j++, length++) /* this loop copies each character from string 2
-        to the position pointed to by the dest end. After each copy, both dest end and string 2
-        are incremented to point to the next character in their respective strings*/
+    while (*s2 != '\0')
     {
-        s1[length] = s2[j];
+        *dest++ = *s2++;
     }
-    
-    s1[length] = '\0'; /* Add a null byte to the end */
-    return (s1);
+
+    *dest = '\0';
+    return (result);
 }
