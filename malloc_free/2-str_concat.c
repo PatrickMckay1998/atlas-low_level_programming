@@ -17,7 +17,7 @@ char *str_concat(char *s1, char *s2)
         len2++;
     }
 
-    new_str = (char *)malloc(len1 + len2 +1); /* Allocate memory for new string which is the amount of s1 plus s2 */
+    result = (char *)malloc(len1 + len2 +1); /* Allocate memory for new string which is the amount of s1 plus s2 */
 
     if (new_str == NULL) /* NULL statement out of the way */
     {
