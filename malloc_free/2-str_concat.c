@@ -4,7 +4,6 @@
 char *str_concat(char *s1, char *s2)
 {   
     int len1, len2;
-    char *new_str;
     char *dest, *result;
 
     while (s1[len1] != '\0') /*Calculate length of s1*/
