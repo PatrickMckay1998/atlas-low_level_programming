@@ -24,16 +24,16 @@ char *str_concat(char *s1, char *s2)
         return (NULL);
     }
 
-    char dest = *result; /* Setting the dest ptr to equal the result ptr*/
+    *dest = *result; /* Setting the dest ptr to equal the result ptr*/
     
     while (*s1 != '\0') /* Copies s1 to dest ptr */
     {
-        dest++ = s1++;
+        *dest++ = *s1++;
     }
 
     while (*s2 != '\0') /* Copies s2 to dest ptr*/
     {
-        dest++ = s2++;
+        *dest++ = *s2++;
     }
 
     dest = '\0'; /* Adds null byte to end of dest ptr*/
