@@ -7,12 +7,12 @@ char *str_concat(char *s1, char *s2)
     char *dest, *result;
 
     len1 = 0;
-    while (s1[len1] != NULL) /*Calculate length of s1*/
+    while (s1[len1] != '\0') /*Calculate length of s1*/
     {
         len1++;
     }
     len2 = 0;
-    while (s2[len2] != NULL) /*Calculate length of s2*/
+    while (s2[len2] != '\0') /*Calculate length of s2*/
     {
         len2++;
     }
