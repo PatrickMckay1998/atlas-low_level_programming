@@ -6,12 +6,13 @@ char *str_concat(char *s1, char *s2)
     int len1, len2;
     char *dest, *result;
 
-    while (s1[len1] != '\0') /*Calculate length of s1*/
+    len1 = 0;
+    while (s1[len1] != NULL) /*Calculate length of s1*/
     {
         len1++;
     }
-
-    while (s2[len2] != '\0') /*Calculate length of s2*/
+    len2 = 0;
+    while (s2[len2] != NULL) /*Calculate length of s2*/
     {
         len2++;
     }
@@ -19,7 +20,7 @@ char *str_concat(char *s1, char *s2)
     result = (char *)malloc(len1 + len2 +1); /* Allocate memory for new string which is the amount of s1 plus s2 */
 
     if (result == NULL) /* NULL statement out of the way */
-    {
+    {   
         return (NULL);
     }
 
