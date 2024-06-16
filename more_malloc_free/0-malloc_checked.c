@@ -10,7 +10,7 @@ void *malloc_checked(unsigned int b)
     unsigned int *return_ptr;
     unsigned int diff_b = b;
 
-    return_ptr = (unsigned int *)malloc(sizeof(diff_b));
+    return_ptr = malloc(sizeof(diff_b));
 
     return (return_ptr);
 }
