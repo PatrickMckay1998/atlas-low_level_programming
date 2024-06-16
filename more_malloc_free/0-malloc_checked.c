@@ -1,21 +1,26 @@
 #include <stdlib.h>
 #include "main.h"
 
-/* Returns a pointer to the allocated memory
-    if malloc fails then the function should cause a normal process termination with a status value of 98
+/* 
+* *malloc_checked - Allocates memory using malloc
+* @return_ptr: a pointer to the new allocated memory
+* 
+* Return: returns pointer to allocated memory
 */
 
 void *malloc_checked(unsigned int b)
+{   /* initialize variables return_ptr*/
+unsigned int *return_ptr;
+    
+/* Allocating memory for the new pointer, I think this is where I am running into issues*/
+return_ptr = (unsigned int *)malloc(sizeof(b) * 1);
+
+/* This is the exit statment if malloc fails*/
+if (return_ptr == NULL) 
 {
-    unsigned int *return_ptr;
-    unsigned int diff_b = b;
+exit(98);
+}
 
-    return_ptr = malloc(sizeof(diff_b));
-
-    if (return_ptr == NULL)
-    {
-        exit(98);
-    }
-
-    return (return_ptr);
+/* Here is where it should return the pointer to the allocated memory */
+return (return_ptr);
 }
