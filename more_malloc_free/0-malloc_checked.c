@@ -12,5 +12,10 @@ void *malloc_checked(unsigned int b)
 
     return_ptr = malloc(sizeof(diff_b));
 
+    if (return_ptr == NULL)
+    {
+        exit(98);
+    }
+
     return (return_ptr);
 }
