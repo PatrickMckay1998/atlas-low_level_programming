@@ -1,4 +1,4 @@
-#include <stdlib.c>
+#include <stdlib.h>
 #include "main.h"
 
 /* Returns a pointer to the allocated memory
