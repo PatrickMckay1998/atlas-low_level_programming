@@ -20,5 +20,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
         i++;
     }
 
-    return;
+    return (arr_1);
 }
