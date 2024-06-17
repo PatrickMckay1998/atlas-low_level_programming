@@ -3,7 +3,9 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {   
-    int str_1 = nmemb;
+    void str_1 = nmemb;
+
+    str_1 = malloc(size * nmemb);
 
     if (nmemb == 0|| size == 0)
     {
@@ -15,6 +17,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
         str_1++;
     }
 
-    str_1 = malloc(size * nmemb);
+    return(str_1++);
 
 }
