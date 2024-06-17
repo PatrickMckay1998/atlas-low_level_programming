@@ -3,10 +3,10 @@
 
 int *array_range(int min, int max)
 {   
-    int arr_1;
+    int *arr_1;
     int m;
     
-    arr_1 = (int *)malloc(max - min + 1);
+    arr_1 = malloc(max - min + 1);
 
     if(min > max)
     {
