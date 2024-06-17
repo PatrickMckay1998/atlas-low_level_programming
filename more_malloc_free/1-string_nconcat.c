@@ -3,31 +3,41 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {   
+    char *ptr = *str_1
     char *str_1 = s1;
-    unsigned int m;
+    unsigned int len1, m;
 
     if (s1 == NULL || s2 == NULL)
     {
         return (NULL);
     }
 
-    while (*str_1 <= '\0') /* Getting the length of s1*/
+    while (*str_1 != '\0') /* Getting the length of s1*/
     {
         str_1++;
+        len1++
     }
 
-    str_1 = malloc(str_1 + 'n' + 1); /* Allocating memory */
+    str_1 = malloc(len1 + n); /* Allocating memory using len1 since it is an integer and not a char*/
+
+    while (*s1 != '\0') /* copies s1 to str_1*/
+    {
+        *ptr = *s1;
+        ptr++;
+        s1++;
+    }
 
     m = 0;
 
-    while(m < n && s2[m] != '\0') /* While m is less than int n and the m position in string two does not equal the null*/
+    while(m < n && s2 != '\0') /* concatenate n characters from s2 to str_1 */
     {
-        *str_1 = s2[m];
-        str_1++;
-        m++;
+        *ptr = *s2
+        ptr++;
+        s2++;
+        m++
     }
 
-    str_1 = '\0';
+    *ptr = '\0';
 
     return (str_1);
 
