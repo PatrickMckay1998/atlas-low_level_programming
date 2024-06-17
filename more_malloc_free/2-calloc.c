@@ -17,6 +17,4 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
     str_1 = calloc(nmemb, size);
 
-    return (str_1);
-
 }
