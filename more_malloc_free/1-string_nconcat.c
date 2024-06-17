@@ -16,7 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     while (*str_1 != '\0') /* Getting the length of s1*/
     {
         str_1++;
-        len1++
+        len1++;
     }
 
     str_1 = (char *)malloc(len1 + n + 1); /* Allocating memory using len1 since it is an integer and not a char*/
@@ -32,10 +32,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
     while(m < n && s2 != '\0') /* concatenate n characters from s2 to str_1 */
     {
-        *ptr = *s2
+        *ptr = *s2;
         ptr++;
         s2++;
-        m++
+        m++;
     }
 
     ptr = '\0';
