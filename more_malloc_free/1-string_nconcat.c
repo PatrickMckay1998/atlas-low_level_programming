@@ -30,9 +30,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
     m = 0;
 
-    while(m < n && s2 != '\0') /* concatenate n characters from s2 to str_1 */
+    while(m < n && *s2 != '\0') /* concatenate n characters from s2 to str_1 */
     {
-        *ptr = *s2;
+        *ptr = s2;
         ptr++;
         s2++;
         m++;
