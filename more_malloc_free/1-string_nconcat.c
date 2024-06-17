@@ -27,6 +27,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         m++;
     }
 
+    str_1 = '\0';
+
     return (str_1);
 
 }
