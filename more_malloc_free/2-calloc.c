@@ -2,7 +2,9 @@
 #include <stdlib.h>
 
 void *_calloc(unsigned int nmemb, unsigned int size)
-{
+{   
+    unsigned int *str_1 = nmemb;
+    
     if (nmemb == NULL || size == NULL)
     {
         return (NULL);
