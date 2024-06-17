@@ -3,7 +3,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {   
-    str_1 = nmemb;
+    int str_1 = nmemb;
 
     if (nmemb == 0|| size == 0)
     {
