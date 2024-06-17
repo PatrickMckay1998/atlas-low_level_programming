@@ -5,7 +5,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {   
     unsigned int str_1 = nmemb;
 
-    if (nmemb == '\0'|| size == '\0')
+    if (nmemb == 0|| size == 0)
     {
         return (NULL);
     }
@@ -15,6 +15,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
         str_1++;
     }
 
-    str_1 = (void *)malloc(size * nmemb);
+    str_1 = malloc(size * nmemb);
 
 }
