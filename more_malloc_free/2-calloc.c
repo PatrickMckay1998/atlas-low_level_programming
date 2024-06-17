@@ -3,6 +3,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {   
+    char *j;
     unsigned int *arr_1;
     int i;
 
@@ -13,9 +14,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
         return (NULL);
     }
 
-    while(arr_1[i] < nmemb)
+    j = (char *)arr_1;
+    
+    while(arr_1[i] < nmemb * size)
     {   
-        i = 0;
+        j[i] = 0;
         i++;
     }
 
