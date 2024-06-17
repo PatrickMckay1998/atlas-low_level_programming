@@ -15,6 +15,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
         str_1++;
     }
 
-    str_1 = malloc(size);
+    str_1 = malloc(size * nmemb);
 
 }
