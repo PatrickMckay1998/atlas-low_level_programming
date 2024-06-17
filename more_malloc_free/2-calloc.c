@@ -3,7 +3,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {   
-    int arr_1 = nmemb;
+    void *arr_1 = nmemb;
     int i;
 
     arr_1 = malloc(size * nmemb);
