@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-int *arraY_range(int min, int max)
+int *array_range(int min, int max)
 {   
     int arr_1;
     
@@ -11,16 +11,15 @@ int *arraY_range(int min, int max)
     {
         return (NULL);
     }
-    
-    m = 0;
-    i = 0;
 
-    while (i >= min && i <= max)
+    m = 0;
+
+    while (min != max) /* while I is more than min and less than max */
     {
-        j[m] = i;
+        arr_1[m] = min;
+        min++;
+        m++;
     }
 
-
-
-
+    return (arr_1);
 }
