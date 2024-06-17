@@ -5,7 +5,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {   
     char *j;
     unsigned int *arr_1;
-    int i;
+    unsigned int i;
 
     arr_1 = malloc(size * nmemb);
 
