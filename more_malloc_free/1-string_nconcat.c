@@ -16,7 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         str_1++;
     }
 
-    str_1 = malloc(sizeof(s1) + (s2)); /* Allocating memory */
+    str_1 = malloc(sizeof(s1) + sizeof(s2)); /* Allocating memory */
 
     while(m < n && s2[m] != '\0') /* While m is less than int n and the m position in string two does not equal the null*/
     {
