@@ -18,7 +18,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         len1++
     }
 
-    str_1 = malloc(len1 + n); /* Allocating memory using len1 since it is an integer and not a char*/
+    str_1 = (char *)malloc(len1 + n + 1); /* Allocating memory using len1 since it is an integer and not a char*/
 
     while (*s1 != '\0') /* copies s1 to str_1*/
     {
