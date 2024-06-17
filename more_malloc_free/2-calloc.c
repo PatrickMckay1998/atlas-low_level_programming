@@ -3,20 +3,21 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {   
-    void str_1 = nmemb;
+    void arr_1 = nmemb;
+    int i;
 
-    str_1 = malloc(size * nmemb);
+    arr_1 = malloc(size * nmemb);
 
-    if (nmemb == 0|| size == 0)
+    if (nmemb == 0|| size == 0 || str_1 == 0)
     {
         return (NULL);
     }
 
-    while (str_1 != '\0')
-    {
-        str_1++;
+    while(i < nmemb)
+    {   
+        i = 0;
+        i++;
     }
 
-    return(str_1++);
-
+    return (arr_1);
 }
