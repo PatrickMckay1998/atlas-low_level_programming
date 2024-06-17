@@ -16,7 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         str_1++;
     }
 
-    str_1 = malloc(str_1 + n + 1); /* Allocating memory */
+    str_1 = malloc(str_1 + 'n' + 1); /* Allocating memory */
 
     m = 0;
 
