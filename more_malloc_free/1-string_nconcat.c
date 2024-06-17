@@ -20,8 +20,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
     while(m < n && s2[m] != '\0') /* While m is less than int n and the m position in string two does not equal the null*/
     {
-        *str_1 = s2[m];
-        *str_1++;
+        str_1 = s2[m];
+        str_1++;
         m++;
     }
 
