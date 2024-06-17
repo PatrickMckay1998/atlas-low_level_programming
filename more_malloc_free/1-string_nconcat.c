@@ -3,8 +3,9 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {   
-    char *ptr = *str_1
+    
     char *str_1 = s1;
+    char *ptr = *str_1;
     unsigned int len1, m;
 
     if (s1 == NULL || s2 == NULL)
