@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
-* main - prints the file that it was compiled from
+* main(void) - prints the file that it was compiled from
 */
 
 int main(void)
