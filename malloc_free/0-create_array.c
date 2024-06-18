@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /*
-* char *create_array - creates an array of chars, and initialized it
+* create_array - creates an array of chars, and initialized it
 * @i: used as a counter for the position in the array
 * @str_array: the new array
 */
