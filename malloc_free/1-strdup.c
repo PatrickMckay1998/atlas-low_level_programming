@@ -6,7 +6,6 @@
 * _strdup - duplicates a string
 * @dup: pointer for the duplicate string
 * @length: length of the string that duplicates
-*
 */
 
 char *_strdup(char *str)
@@ -14,7 +13,7 @@ char *_strdup(char *str)
 char *dup;
 unsigned int length;
 
-dup = malloc(sizeof(str) * 25);
+dup = malloc(sizeof(str));
 
 if (str == NULL)
 {
