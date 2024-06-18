@@ -9,18 +9,14 @@
 */
 
 void *malloc_checked(unsigned int b)
-{   /* initialize variables return_ptr*/
-unsigned int *return_ptr;
-    
-/* Allocating memory for the new pointer, I think this is where I am running into issues*/
-return_ptr = (unsigned int *)malloc(sizeof(b) * 1);
+{   
+    void *ptr;
 
-/* This is the exit statment if malloc fails*/
-if (return_ptr == NULL) 
-{
-exit(98);
-}
+    ptr = malloc(b);
+    if (ptr == NULL)
+    {
+        exit(98);
+    }
 
-/* Here is where it should return the pointer to the allocated memory */
-return (return_ptr);
+    return (ptr);
 }
