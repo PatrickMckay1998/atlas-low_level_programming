@@ -3,24 +3,20 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {   
-    char *j;
-    unsigned int *arr_1;
-    unsigned int i;
+    void *ptr;
+    unsigned int total_size;
 
-    arr_1 = malloc(size * nmemb);
+    if (nmemb == 0 || size == 0)
+        return NULL;
 
-   
-    if (nmemb == 0 || size == 0 || arr_1 == 0)
-    {
-        return (NULL);
-    }
+    total_size = nmemb * size;
 
-    j = (char *)arr_1;
-    
-    for(i = 0; i < nmemb * size; i++)
-    {   
-        j[i] = 0;
-    }
+    ptr = malloc(total_size);
+    if (ptr == NULL)
+        return NULL;
 
-    return (arr_1);
+    // Initialize allocated memory to zero
+    memset(ptr, 0, total_size);
+
+    return ptr;
 }
