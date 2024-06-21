@@ -4,15 +4,15 @@
 
 void print_dog(struct dog *d)
 {
-    if (d -> name == 'NULL')
+    if (d -> name == NULL)
     {
         printf("Name: (nil)");
     }
-    else if (d -> age == 'NULL')
+    else if (d -> age == NULL)
     {
         printf("Age: (nil)");
     }
-    else if (d -> owner == 'NULL')
+    else if (d -> owner == NULL)
     {
         printf("Owner: (nil)");
     }
