@@ -4,6 +4,5 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-    char *name = &name;
-    return(name);
+    char *name;
 }
