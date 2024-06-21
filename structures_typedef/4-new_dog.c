@@ -5,7 +5,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 int len1, len2;
-char *cpy_name, *cpy_owner;
+char *cpy_name[], *cpy_owner[];
   
 len1 = 0;
   
@@ -23,4 +23,5 @@ len1 = 0;
   
 cpy_name = malloc(sizeof(name) + 1);
 cpy_owner = malloc(sizeof(owner) + 1);
+
 }
