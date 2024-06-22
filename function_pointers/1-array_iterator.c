@@ -4,15 +4,14 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-    int m; 
+    int m;
 
     m = 0;
 
-    array[m] = malloc(size);
-
     while (array[m] != '\0')
     {
-        (*action)(m);
+        size = m;
+        action(m);
         m++;
     }
 }
