@@ -8,6 +8,8 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
     m = 0;
 
+    array[m] = malloc(size);
+
     while (array[m] != '\0')
     {
         (*action)(m);
