@@ -6,7 +6,7 @@ void free_dog(dog_t *d)
 {
     if (d -> age == NULL)
     {
-        printf(0);
+        printf("%d", 0);
     }
 
     free(d -> name);
