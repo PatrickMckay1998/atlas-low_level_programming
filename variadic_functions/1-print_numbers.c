@@ -3,7 +3,7 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {      
-unsigned int b, i;
+unsigned int b, j;
 
     va_list args;
 
@@ -11,7 +11,18 @@ unsigned int b, i;
 
     for(b = 0; b <= n -1; b++)
     {
-    
+        j = 0;
+
+        if (j < b && separator != NULL)
+        {
+            printf("%d", n);
+        }
+
+        else if(separator != NULL)
+        {
+            printf("%s", separator);
+        }
+        
     }
 
     va_end(args);
