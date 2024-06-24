@@ -3,7 +3,7 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {      
-int b, i;
+unsigned int b, i;
 
     va_list args;
 
