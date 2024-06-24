@@ -10,15 +10,19 @@ unsigned int b, i;
     va_start(args, n);
 
     for(b = 0; b <= n -1; b++)
-    {
+    { /*this loops through and gets the number of args*/
         i = va_arg(args, int);
-
-        if (separator == NULL)
+        /* in this if statement I want to print separator and n
+        if separator is null then dont print it. Do I need a space then? 
+        like printf(" ") it doesnt say, it just says dont print it. */
+        for ()
+        
+        /* if (separator == NULL)
         {
-            b++;
+            b++
         }
 
-        printf("%d%s", i, separator);
+        printf("%d%s", i, separator); */
 
     }
 
