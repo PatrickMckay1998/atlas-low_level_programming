@@ -11,12 +11,15 @@ unsigned int b, i;
 
     for(b = 0; b <= n -1; b++)
     {
-        i = va_arg(args, int)
-        if(separator == 'NULL')
+        i = va_arg(args, int);
+
+        if (separator == 'NULL')
         {
             b++;
         }
+
         printf("%d", i);
+        
     }
 
     va_end(args);
