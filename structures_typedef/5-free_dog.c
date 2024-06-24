@@ -3,8 +3,9 @@
 #include "dog.h"
 
 void free_dog(dog_t *d)
-{
-    if (d -> age == NULL)
+{   
+    
+    if (d -> age == 0)
     {
         printf("%d", 0);
     }
