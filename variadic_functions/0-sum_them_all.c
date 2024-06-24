@@ -3,7 +3,7 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-    int sum;
+    int sum, j;
     
     va_list args;
 
@@ -13,9 +13,15 @@ int sum_them_all(const unsigned int n, ...)
     {
         return (0);
     }
-
-    int j = va_arg(args, int);
     
-    sum = n + j;
+    sum = 0;
     
+    for (j = 0; j <= n - 1; j++)
+    {
+      sum = sum + va_arg(args, int);
+    }
+    
+    va_end(args);
+    
+    return (sum + n);
 }
