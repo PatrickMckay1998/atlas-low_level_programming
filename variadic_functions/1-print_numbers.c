@@ -18,6 +18,8 @@ unsigned int b, i;
         }
         printf("%d", i);
     }
+
+    va_end(args);
     
     return (0);
 
