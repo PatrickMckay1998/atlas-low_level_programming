@@ -11,7 +11,6 @@ char *cpy_name, *cpy_owner;
  cpy_owner = malloc(sizeof(owner) + 1);
 */
 
-d -> age = age;
 
 len1 = 0;
   
@@ -28,5 +27,6 @@ len1 = 0;
     cpy_owner[len2] = owner[len2];
     len2++;
   } /* obtaines length of owner and copies it to cpy_owner */
+  
   
 }
