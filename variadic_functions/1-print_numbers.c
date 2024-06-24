@@ -18,7 +18,7 @@ unsigned int b, i;
             b++;
         }
 
-        printf("%d%s", i, separator);
+        printf("%d", i);
 
     }
 
