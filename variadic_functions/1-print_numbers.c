@@ -13,13 +13,13 @@ unsigned int b, i;
     {
         i = va_arg(args, int);
 
-        if (separator == 'NULL')
+        if (separator == NULL)
         {
             b++;
         }
 
         printf("%d", i);
-        
+
     }
 
     va_end(args);
