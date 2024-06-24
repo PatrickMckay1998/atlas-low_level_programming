@@ -28,5 +28,5 @@ len1 = 0;
     cpy_owner[len2] = owner[len2];
     len2++;
   } /* obtaines length of owner and copies it to cpy_owner */
-  return;
+  
 }
