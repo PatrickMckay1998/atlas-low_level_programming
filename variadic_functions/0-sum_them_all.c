@@ -4,7 +4,7 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-    int sum, j;
+    unsigned int sum, j;
     
     va_list args;
 
