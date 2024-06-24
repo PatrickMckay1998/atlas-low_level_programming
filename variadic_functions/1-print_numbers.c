@@ -24,6 +24,6 @@ unsigned int b, i;
 
     va_end(args);
     
-    return (0);
+    return;
 
 }
