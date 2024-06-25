@@ -13,14 +13,18 @@ unsigned int b, j;
     {
         j = va_arg(args, int);
 
-        if (j < b && separator != NULL)
+        if (j != 'NULL')
         {
-            printf("%d", n);
+          printf("%d", j);
         }
-
-        else if(separator != NULL)
+        else
         {
-            printf("%s", separator);
+          printf("(nil)");
+        }
+        
+        if (separator != NULL && b <= n -1)
+        {
+          printf("%s", separator);
         }
 
     }
