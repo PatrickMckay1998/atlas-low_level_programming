@@ -11,7 +11,7 @@ unsigned int b, j;
 
     for(b = 0; b <= n -1; b++)
     {
-        j = 0;
+        j = va_arg(args, int);
 
         if (j < b && separator != NULL)
         {
@@ -22,7 +22,7 @@ unsigned int b, j;
         {
             printf("%s", separator);
         }
-        
+
     }
 
     va_end(args);
