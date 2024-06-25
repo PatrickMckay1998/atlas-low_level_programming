@@ -13,7 +13,7 @@ unsigned int b, j;
     {
         j = va_arg(args, int);
 
-        if (j != NULL)
+        if (j != '\0')
         {
           printf("%d", j);
         }
