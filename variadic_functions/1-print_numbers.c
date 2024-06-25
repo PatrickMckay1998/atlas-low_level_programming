@@ -15,7 +15,7 @@ unsigned int b, j;
 
         printf("%d", j);
         
-        if (separator != NULL && b <= n -1)
+        if (separator != NULL && b < n -1)
         {
           printf("%s", separator);
         }
