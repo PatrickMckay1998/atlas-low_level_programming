@@ -13,14 +13,7 @@ unsigned int b, j;
     {
         j = va_arg(args, int);
 
-        if (j != '\0')
-        {
-          printf("%d", j);
-        }
-        else
-        {
-          printf("(nil)");
-        }
+        printf("%d", j);
         
         if (separator != NULL && b <= n -1)
         {
