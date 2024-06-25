@@ -23,6 +23,7 @@ unsigned int b, j;
     }
 
     va_end(args);
+    printf("\n");
     
     return;
 
