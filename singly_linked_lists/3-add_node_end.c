@@ -7,7 +7,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
     const char* str2;
     
-    list_t **ptr, **temp;
+    list_t **ptr;
     
     ptr = head;
     
