@@ -7,10 +7,16 @@
 size_t print_list(const list_t *h)
 {
     list_t *temp = h;
+    unsigned int mia;
 
-    while (temp != NULL)
+    /* Now we need to print the number of elements */
+
+    mia = 0;
+
+    while (temp != NULL && mia <= temp.len)
     {
-        printf("%s", temp.str);
+        printf("[%d] %s", temp.len, temp.str);
+        mia++;
         temp = temp.next;
     }
     printf("\n");
