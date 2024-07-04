@@ -19,6 +19,6 @@ size_t print_list(const list_t *h)
         mia++;
         temp = temp->next;
     }
-    printf("\n");
+    /*printf("\n");*/
     return(mia);
 }
