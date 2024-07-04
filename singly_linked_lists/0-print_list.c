@@ -11,10 +11,6 @@ size_t print_list(const list_t *h)
     unsigned int mia;
 
     mia = 0;
-    
-    
-
-    Lets try splitting these two up
 
     while (temp != NULL && mia != temp->len)
     {   
