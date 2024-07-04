@@ -4,8 +4,9 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-    list_t *ptr, *temp;
+    list_t **ptr, **temp;
     ptr = head;
+    const char *str2;
     temp = (list_t*) malloc(sizeof(list_t));
 
     str2 = strdup(*str);
