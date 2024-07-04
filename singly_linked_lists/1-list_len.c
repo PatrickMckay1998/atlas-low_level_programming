@@ -11,7 +11,7 @@ size_t list_len(const list_t *h)
     
     while (pat != NULL)
     {
-        mia++
+        mia++;
         pat->next;
     }
 
