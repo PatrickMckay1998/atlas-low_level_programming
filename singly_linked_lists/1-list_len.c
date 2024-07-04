@@ -7,7 +7,7 @@
 * @mia: She contains the number of elements
 *
 * Description: This program takes the struct H and iterates through
-* each node and uses mia to take in the number of elements 
+* each node and uses mia to take in the number of elements
 * will retrun the numer of elements stored in mia
 *
 * Return: Return the number of elements contained in mia
