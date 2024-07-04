@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 
     mia = 0;
 
-    while (temp != NULL && mia <= temp->len)
+    while (temp != NULL && mia != temp->len)
     {
         printf("[%d] %s\n", temp->len, temp->str);
         mia++;
