@@ -6,7 +6,7 @@
 
 size_t print_list(const list_t *h)
 {
-    list_t *temp = h;
+    list_t* temp = h;
     unsigned int mia;
 
     /* Now we need to print the number of elements */
