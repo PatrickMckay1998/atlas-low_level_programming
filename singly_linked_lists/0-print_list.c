@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 
     while (temp != NULL && mia != temp->len)
     {   
-        if (temp->str == " ")
+        if (temp->str ==)
         {
             printf("[0]");
             printf("\n");
