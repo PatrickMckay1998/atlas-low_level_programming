@@ -5,7 +5,7 @@
 
 size_t listint_len(const listint_t *h)
 {
-    listint_t *pat = h;
+    const listint_t *pat = h;
     int mia;
 
     mia = 0;
