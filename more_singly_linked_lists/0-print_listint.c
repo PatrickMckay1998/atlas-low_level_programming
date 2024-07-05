@@ -6,7 +6,7 @@
 * @pat: pat is used to access the linked list
 * @mia: She contains the number of elements to later return
 *
-* Description: This program takes the linked list and prints out the data 
+* Description: This program takes the linked list and prints out the data
 * stored inside of the nodes and returns the number of elements
 *
 * Return: returns the number stored in mia
