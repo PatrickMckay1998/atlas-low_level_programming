@@ -12,7 +12,7 @@ size_t print_listint(const listint_t *h)
 
     while (pat != NULL)
     {
-        printf("%d", pat->int);
+        printf("%d", pat->n);
         mia++;
         pat = pat->next;
     }
