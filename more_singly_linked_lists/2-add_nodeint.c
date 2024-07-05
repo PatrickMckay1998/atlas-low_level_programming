@@ -9,11 +9,11 @@ listint_t *add_nodeint(listint_t **head, const int n)
     /* create a new node to be added */
 
     /* Add data to new node */
-    **new_node->n = const int n;
+    new_node->n = const int n;
 
-    **new_node->next = (**head);
+    new_node->next = (**head);
 
-    (**head) = **new_node;
+    (**head) = new_node;
 
     return(&head);
 
