@@ -5,16 +5,19 @@
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-    listint_t new_node = (listint_t) malloc (sizeof(listint_t));
+    listint_t **head_ref = head;
+
+
+    listint_t **new_node = (listint_t) malloc (sizeof(listint_t));
     /* create a new node to be added */
 
     /* Add data to new node */
     new_node->n = const int n;
 
-    new_node->next = (**head);
+    new_node->next = (**head_ref);
 
-    (**head) = new_node;
+    (**head_ref) = new_node;
 
-    return(&head);
+    return(&head_ref);
 
 }
