@@ -4,6 +4,6 @@
 
 void free_listint(listint_t *head)
 {
-    free(listint_t* head);
+    free( void listint_t* head);
     return (0);
 }
