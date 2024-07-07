@@ -4,7 +4,7 @@
 #include "lists.h"
 
 listint_t *add_nodeint(listint_t **head, const int n)
-{
+{   
     const int temp_n = n;
 
     listint_t* new_node = (listint_t*) malloc (sizeof(listint_t));
@@ -15,6 +15,6 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
     (*head) = new_node;
 
-    return(*head);
+    return(new_node);
 
 }
