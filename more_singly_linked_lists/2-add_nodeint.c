@@ -5,7 +5,7 @@
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-    const int temp_n = n
+    const int temp_n = n;
 
     listint_t **head_ref = head;
 
