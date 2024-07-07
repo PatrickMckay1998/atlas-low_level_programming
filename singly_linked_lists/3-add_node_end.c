@@ -7,11 +7,11 @@ list_t *add_node_end(list_t **head, const char *str)
 {
     const char* str2;
     
-    list_t **ptr;
+    list_t *ptr;
     
     ptr = head;
     
-    list_t** temp = (list_t**) malloc(sizeof(list_t));
+    list_t* temp = (list_t*) malloc(sizeof(list_t));
 
     str2 = strdup(str);
 
