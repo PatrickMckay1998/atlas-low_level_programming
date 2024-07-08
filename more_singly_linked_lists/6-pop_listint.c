@@ -4,7 +4,7 @@
 
 int pop_listint(listint_t **head)
 {
-    listint_t** temp;
+    listint_t* temp;
     
     while (*head != NULL)
     {
