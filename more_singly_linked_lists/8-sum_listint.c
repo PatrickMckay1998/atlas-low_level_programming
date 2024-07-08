@@ -20,6 +20,8 @@ int sum_listint(listint_t *head)
         mia = result;
         temp = temp->next;
     }
+
+    return (mia);
 }
 
 /* Set mia to zero, get the value of the data and put it to mia2, add those two numbers and you get the result
