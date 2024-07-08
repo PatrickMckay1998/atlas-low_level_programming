@@ -4,12 +4,14 @@
 
 int pop_listint(listint_t **head)
 {
-    listint_t* temp;
+    listint_t* temp = *head
+
+    listint_t* prior = NULL
     
-    while (*head != NULL)
+    while (*temp != NULL)
     {
-        head = temp;
-        head = temp->next;
+        prior = temp;
+        temp = temp->next;
         free(temp);
     }
 }
