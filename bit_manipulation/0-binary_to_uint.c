@@ -41,13 +41,13 @@ unsigned int binary_to_uint(const char *b)
 
     while(b[jo] != '\0')
     {
-         /* This should iterate through the string getting the length 
+          This should iterate through the string getting the length 
         printf("nico now = %d", nico);
         printf("jo = %c", jo);
         jo++;
     }  
 
-    str_len = nico; /* set the value of nico to str_len */
+    str_len = nico; set the value of nico to str_len */
 
     int str_len = strlen(b);
 
