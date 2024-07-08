@@ -9,7 +9,7 @@ int pop_listint(listint_t **head)
     while (*head != NULL)
     {
         head = temp;
-        head = head->next;
+        temp = head->next;
         free(temp);
     }
 }
