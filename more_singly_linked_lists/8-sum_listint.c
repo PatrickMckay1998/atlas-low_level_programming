@@ -15,7 +15,7 @@ int sum_listint(listint_t *head)
 
     while (temp != NULL) /* This is how you iterate through the list */
     {
-        mia2 = temp->n; /* Get the value of the data inside of the node */
+        mia_next = temp->n; /* Get the value of the data inside of the node */
         result = mia + mia_next; 
         mia = result;
         temp = temp->next;
