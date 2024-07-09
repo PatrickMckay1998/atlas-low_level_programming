@@ -25,6 +25,9 @@ int main(void)
 
 unsigned int binary_to_uint(const char *b)
 {   
+    int mia, total = 0, int_val = 1;
+    
+    int str_len = len;
 
     int jo, len = 0;
     
@@ -32,10 +35,6 @@ unsigned int binary_to_uint(const char *b)
     {
         len++;
     }
-
-    int str_len = len;
-
-    int mia, total = 0, int_val = 1;
 
     for(mia = (str_len - 1); mia >= 0; mia--) /* set mia to end of the string, while mia is greater than 0, mia decrements */
     {
