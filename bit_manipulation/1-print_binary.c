@@ -1,33 +1,27 @@
 #include <stdio.h>
 #include "main.h"
 
-void print_binary(unsigned long int n);
-
-int main(void)
-{
-    print_binary(0);
-    printf("\n");
-    print_binary(1);
-    printf("\n");
-    print_binary(98);
-    printf("\n");
-    print_binary(1024);
-    printf("\n");
-    print_binary((1 << 10) + 1);
-    printf("\n");
-    return (0);
-}
-
 void print_binary(unsigned long int n)
-{   
-    char* binary;
+{
+    unsigned long int mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
+    int started = 0;
 
-    int i;
-
-    while(n) {
-        binary[i++] = '0' + (n & 1);
-        n >>= 1;
+    while (mask > 0)
+    {
+        if (n & mask)
+        {
+            _putchar('1');
+            started = 1;
+        }
+        else if (started)
+        {
+            _putchar('0');
+        }
+        mask >>= 1;
     }
-    binary[i] = '\0';
-    return;
+
+    if (!started)
+    {
+        _putchar('0');
+    }
 }
