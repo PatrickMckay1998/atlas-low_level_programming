@@ -29,5 +29,5 @@ void print_binary(unsigned long int n)
         n >>= 1;
     }
     binary[i] = '\0';
-    return (binary - 1);
+    return;
 }
