@@ -40,11 +40,13 @@ unsigned int binary_to_uint(const char *b)
 
     for(mia = (str_len - 1); mia >= 0; mia--) /* set mia to end of the string, while mia is greater than 0, mia decrements */
     {   
-        if(b[mia] != '1' && b[mia] != '0' || b == NULL) /* if mia doesnt equal a one or a zero or if b is null then return 0 */
+        /*if mia doesnt equal a one or a zero or if b is null then return 0
+        
+        if(b[mia] != '1' && b[mia] != '0' || b == NULL)
         {
             return (0);
         }
-
+        */
 
         if (b[mia] == '1') /* if mia equals a 1 then */
         {
