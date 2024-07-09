@@ -22,7 +22,7 @@ void print_binary(unsigned long int n)
 {   
     char* binary;
 
-    int i, mia = 0;
+    int i;
 
     while(n) {
         binary[i++] = '0' + (n & 1);
