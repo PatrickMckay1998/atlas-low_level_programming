@@ -27,14 +27,16 @@ unsigned int binary_to_uint(const char *b)
 {   
     int mia, total = 0, int_val = 1;
     
-    int str_len = len;
-
     int jo, len = 0;
     
+    int str_len;
+
     for (jo = 0; b[jo] != '\0'; jo++)
     {
         len++;
     }
+    
+    str_len = len;
 
     for(mia = (str_len - 1); mia >= 0; mia--) /* set mia to end of the string, while mia is greater than 0, mia decrements */
     {
