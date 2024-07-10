@@ -42,9 +42,7 @@ int main(void)
 }
 
 list_t *add_node(list_t **head, const char *str)
-{   
-    const char* str_2 = str;
-
+{
     list_t* new_node = (list_t*) malloc(sizeof(list_t));
     
     new_node->str = (*head)->str;
