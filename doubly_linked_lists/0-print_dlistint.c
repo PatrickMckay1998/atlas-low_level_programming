@@ -43,6 +43,7 @@ size_t print_dlistint(const dlistint_t *h)
     else if (temp->next != NULL)
     {   
         mia++;
+        printf("%d", mia);
         temp = temp->next;
     }
     return (mia);
