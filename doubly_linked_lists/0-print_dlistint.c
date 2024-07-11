@@ -42,21 +42,23 @@ size_t print_dlistint(const dlistint_t *h)
     }
     */
 
-    /*
+
     while (temp != NULL)
     {   
         mia++;
         printf("%d\n", temp->n); 
         temp = temp->next;
     }
-    */
 
-   while (temp)
+
+   
+   /*while (temp)
    {
         mia++;
         printf("%d\n", temp->n);
         temp = temp->next;
     }
+    */
     return (mia);
 
     
