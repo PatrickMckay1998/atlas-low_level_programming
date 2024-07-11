@@ -5,7 +5,7 @@
 
 size_t dlistint_len(const dlistint_t *h)
 {
-    const dlistint_t* temp = *h;
+    const dlistint_t* temp = h;
 
     int mia = 0;
 
