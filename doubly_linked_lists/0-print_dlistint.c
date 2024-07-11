@@ -31,13 +31,13 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-    dlistint_t *temp = h;
+     const dlistint_t *temp = h;
 
     int mia = 0;
 
     if (temp->next == NULL)
     {
-        return;
+        return (0);
     }
 
     else if (temp->next != NULL)
