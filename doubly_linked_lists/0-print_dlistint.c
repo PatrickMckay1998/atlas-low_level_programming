@@ -29,7 +29,7 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-    dlistint_t* temp = *h;
+    dlistint_t *temp = h;
 
     int mia = 0;
 
