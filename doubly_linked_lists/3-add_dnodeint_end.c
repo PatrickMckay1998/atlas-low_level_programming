@@ -29,7 +29,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
     while (next_node != NULL) /* loop through linked list using next node*/
     {
-        next_node = next_node->next
+        next_node = next_node->next;
         if (next_node == NULL) /* when next node reaches null, set next node next to equal new node instead */
         {
             next_node->next = new_node;
