@@ -13,31 +13,28 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
     dlistint_t* new_node = (dlistint_t*) malloc (sizeof(dlistint_t)); /* Create new node for linked list */
 
-    dlistint_t* next_node = (dlistint_t*) malloc (sizeof(dlistint_t)); /* create next node to go through list */
+    dlistint_t* next_node = *head;
 
     new_node->n = n;
     new_node->next = NULL;
 
 
 
-   if ((*head) == NULL) /* if head is null then set new node as head */
+   if (*head == NULL) /* if head is null then set new node as head */
         {
             new_node->prev = NULL; 
-            (*head) = new_node;
+            *head = new_node;
             return (new_node);
         }
    
-    while ((*head) != NULL) /* loop through linked list using next node*/
+    
+    while (*head != NULL) /* loop through linked list using next node*/
     {   
-        next_node->n = (*head)->n;
         next_node = next_node->next;
-        
-        if (next_node == NULL) /* when next node reaches null, set next node next to equal new node instead */
-        {
-            next_node->next = new_node;
-            new_node->prev = next_node; /* new node next is set to null and then we set prev to what is currently next_node */
-        }
-    }
+    }    
+    
+    next_node->next = new_node;
+    new_node->prev = next_node;
     
     return (new_node);
 
