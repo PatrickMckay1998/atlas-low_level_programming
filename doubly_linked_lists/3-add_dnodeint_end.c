@@ -27,32 +27,25 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
        return (new_node);
     }
 
-    while (next_node->next != NULL) /* while head doesnt equal null then move to the next */
-    { /* go through the list until the end, set next to = the new node
-        set the new node prev to point to next_node */
-        next_node = next_node->next;
-        next_node->next = new_node;
-        new_node->prev = next_node;
+    while (next_node != NULL) /* loop through linked list using next node*/
+    {
+        next_node = next_node->next
+        if (next_node == NULL) /* when next node reaches null, set next node next to equal new node instead */
+        {
+            next_node->next = new_node;
+            new_node->prev = next_node; /* new node next is set to null and then we set prev to what is currently next_node */
+        }
     }
     
     return (new_node);
 
 }
-/*
-int main(void)
-{
-    dlistint_t *head;
 
-    head = NULL;
-    add_dnodeint_end(&head, 0);
-    add_dnodeint_end(&head, 1);
-    add_dnodeint_end(&head, 2);
-    add_dnodeint_end(&head, 3);
-    add_dnodeint_end(&head, 4);
-    add_dnodeint_end(&head, 98);
-    add_dnodeint_end(&head, 402);
-    add_dnodeint_end(&head, 1024);
-    print_dlistint(head);
-    return (EXIT_SUCCESS);
-}
+/*
+    while (next_node->next != NULL) 
+        next_node = next_node->next;
+        
+        next_node->next = new_node;
+        new_node->prev = next_node;
+    }
 */
