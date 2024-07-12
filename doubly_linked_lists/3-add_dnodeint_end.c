@@ -15,7 +15,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
     dlistint_t* next_node = (dlistint_t*) malloc (sizeof(dlistint_t)); /* create next node to go through list */
 
-    while (next_node != NULL) /* loop through linked list using next node*/
+    while (head) /* loop through linked list using next node*/
     {
         if ((*head) == NULL) /* if head is null then set new node as head */
         {
