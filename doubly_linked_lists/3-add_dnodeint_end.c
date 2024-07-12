@@ -5,7 +5,7 @@
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-    dlistint_t* next_node = head; /* Set next node to head*/
+    dlistint_t* next_node = (*head); /* Set next node to head*/
 
     dlistint_t* new_node = (dlistint_t*) malloc (sizeof(dlistint_t)); /* Create new node for linked list */
 
@@ -17,7 +17,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
             new_node->next = NULL;
             next_node = new_node;
         }
-        next_node->next;
     }
     return (new_node);
 }
