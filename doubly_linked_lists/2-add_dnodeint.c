@@ -13,7 +13,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
     (*head) = new_node;
     return (new_node);
 }
-
+/*
 int main(void)
 {
     dlistint_t *head;
@@ -30,3 +30,4 @@ int main(void)
     print_dlistint(head);
     return (EXIT_SUCCESS);
 }
+*/
