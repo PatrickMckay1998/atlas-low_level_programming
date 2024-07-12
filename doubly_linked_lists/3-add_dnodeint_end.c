@@ -13,7 +13,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
     dlistint_t* new_node = (dlistint_t*) malloc (sizeof(dlistint_t)); /* Create new node for linked list */
 
-    
+    dlistint_t* next_node = *head;
 
     if (!new_node)
     {
@@ -30,7 +30,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
             return (new_node);
         }
    
-    dlistint_t* next_node = *head;
+    
     
     while (next_node->next != NULL) /* loop through linked list using next node*/
     {   
