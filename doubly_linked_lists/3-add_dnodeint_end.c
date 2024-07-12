@@ -15,10 +15,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
     dlistint_t* next_node = (dlistint_t*) malloc (sizeof(dlistint_t)); /* create next node to go through list */
 
-    new_node->n = n;
-    new_node->next = NULL;
-
-     /* this should initialize next_node to head so it can move through the list */
+    
     
     if ((*head) == NULL) /* if head is null then set new node as head */
     {
@@ -29,6 +26,9 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
     while (next_node != NULL) /* loop through linked list using next node*/
     {
+        new_node->n = n;
+        new_node->next = NULL;
+
         next_node = next_node->next;
         if (next_node == NULL) /* when next node reaches null, set next node next to equal new node instead */
         {
