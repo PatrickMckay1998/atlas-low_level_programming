@@ -18,7 +18,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
     new_node->n = n;
     new_node->next = NULL;
 
-    next_node = (*head); /* this should initialize next_node to head so it can move through the list */
+     /* this should initialize next_node to head so it can move through the list */
     
     if ((*head) == NULL) /* if head is null then set new node as head */
     {
