@@ -10,7 +10,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
     unsigned int i;
 
-    i = 0;
+    i = 1;
 
     while (i <= index) /* while is less than or equal to index then move on to the next node */
     {
