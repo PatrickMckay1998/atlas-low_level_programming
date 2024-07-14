@@ -18,7 +18,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
     dlistint_t* next; /* Helps keep track of where we are in the list */
     dlistint_t* prev_node; /* will be used to better understand adding new node later */
 
-    int i = 0;
+    unsigned int i = 0; /* set int to unsiged to it doesnt throw a warning */
 
     new_node->n = n;
 
