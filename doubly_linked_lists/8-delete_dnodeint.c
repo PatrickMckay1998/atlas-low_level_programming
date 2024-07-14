@@ -23,8 +23,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
     del->next->prev = del->prev; /* the prev of the node after del is set to the node before del */
     del->prev->next = del->next; /* the next of the node before del is set to the node after del */
 
-    free(del);
-
     return(1);
 
 }
