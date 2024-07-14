@@ -22,7 +22,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
     new_node->n = n;
 
-    while(i != idx) /* move through list until idx is reached then leave loop */
+    while(i <= idx) /* move through list until idx is reached then leave loop */
     {
         next = current->next;
         current = next;
