@@ -9,6 +9,6 @@ hash_table_t *hash_table_create(unsigned long int size)
     /* Create a new hash table, I think. */
     hash_table->size = size;
     /* Set the size of our new table to the size provided */
-    return (*hash_table);
+    return (hash_table);
     /* Return the a pointer to the new hash_table */
 }
